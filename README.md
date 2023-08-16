@@ -10,4 +10,4 @@
 - WPF
 - Microsoft SQL
 - Entity Framework
-
+- LINQ

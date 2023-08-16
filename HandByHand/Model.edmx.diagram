@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e82f6b83ee06431eb1571d1d4223618f" Name="Diagram1" ZoomLevel="106">
+        <EntityTypeShape EntityType="DataBaseModel.EditDirection" Width="1.5" PointX="7.375" PointY="3.25" />
+        <EntityTypeShape EntityType="DataBaseModel.Class" Width="1.5" PointX="7.5" PointY="6.125" />
+        <EntityTypeShape EntityType="DataBaseModel.Direction" Width="1.5" PointX="3" PointY="6.375" />
+        <EntityTypeShape EntityType="DataBaseModel.Mentor" Width="1.5" PointX="0.75" PointY="7.75" />
+        <EntityTypeShape EntityType="DataBaseModel.Student" Width="1.5" PointX="5.25" PointY="6" />
+        <EntityTypeShape EntityType="DataBaseModel.User" Width="1.5" PointX="3" PointY="9.75" />
+        <AssociationConnector Association="DataBaseModel.FK__Class__ID_Direct__6C190EBB" />
+        <AssociationConnector Association="DataBaseModel.FK__Class__ID_Studen__6D0D32F4" />
+        <AssociationConnector Association="DataBaseModel.FK__Direction__ID_Me__66603565" />
+        <AssociationConnector Association="DataBaseModel.FK__Student__ID_Dire__693CA210" />
+        <AssociationConnector Association="DataBaseModel.FK__User__ID_Mentor__6383C8BA" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

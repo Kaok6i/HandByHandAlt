@@ -1,0 +1,44 @@
+﻿<Window x:Class="HandByHand.SelectMentorWorkWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HandByHand"
+        mc:Ignorable="d"
+        Title="Выбор действия" Height="450" Width="450" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Icon="Resource\logo.jpg" Loaded="Window_Loaded">
+    <Grid>
+        
+        <Grid.Background>
+            <SolidColorBrush Color="#FF92BCCA" Opacity="0.7"/>
+        </Grid.Background>
+         
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.3*"/>
+            <RowDefinition Height="0.4*"/>
+            <RowDefinition Height="0.3*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="С чего начнем?" FontSize="42" FontFamily="Sitka Small" FontWeight="Bold" Grid.Row="0" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+        <ComboBox x:Name="ActivitiesCB" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0" FontSize="32" FontFamily="Sitka Small" Height="50" VerticalAlignment="Center" HorizontalAlignment="Center" Width="400"  Background="White" SelectedIndex="0">
+            <ComboBoxItem Content="Начать урок"/>
+            <ComboBoxItem Content="Редактировать урок"/>
+        </ComboBox>
+            <ComboBox x:Name="directionCB" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="1" FontSize="29" FontFamily="Sitka Small" Height="50" VerticalAlignment="Center" HorizontalAlignment="Center" Width="400"  Background="White" SelectedIndex="0" Visibility="Hidden">
+                
+            </ComboBox>
+        </Grid>
+        <Button x:Name="selectBttn" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="2" Height="60" Width="400" Background="#FF4979AF" Content="ВЫБРАТЬ" FontSize="42" FontWeight="Medium" FontFamily="Sitka Small" BorderBrush="#FF335882" Click="selectBttn_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="30"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        
+    </Grid>
+</Window>

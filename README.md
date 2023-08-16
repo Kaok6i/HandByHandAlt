@@ -10,4 +10,4 @@
 - WPF
 - Microsoft SQL
 - Entity Framework
-> By developers Kristina and Iaroslav
+
